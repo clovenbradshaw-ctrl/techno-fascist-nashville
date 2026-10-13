@@ -1,0 +1,44 @@
+BEGIN:VCALENDAR
+VERSION:2.0
+PRODID:-//Claude//Event//EN
+CALSCALE:GREGORIAN
+METHOD:PUBLISH
+BEGIN:VTIMEZONE
+TZID:America/Chicago
+BEGIN:DAYLIGHT
+TZOFFSETFROM:-0600
+TZOFFSETTO:-0500
+TZNAME:CDT
+DTSTART:19700308T020000
+RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=2SU
+END:DAYLIGHT
+BEGIN:STANDARD
+TZOFFSETFROM:-0500
+TZOFFSETTO:-0600
+TZNAME:CST
+DTSTART:19701101T020000
+RRULE:FREQ=YEARLY;BYMONTH=11;BYDAY=1SU
+END:STANDARD
+END:VTIMEZONE
+BEGIN:VEVENT
+UID:techno-fascist-nashville-20261019@claude
+DTSTAMP:20261012T120000Z
+DTSTART;TZID=America/Chicago:20261019T180000
+DTEND;TZID=America/Chicago:20261019T200000
+SUMMARY:Techno-Fascist Nashville
+LOCATION:Glendale United Methodist Church\, Nashville\, TN
+DESCRIPTION:A conversation with Nashville organizers and Gil Duran\, author
+  of The Nerd Reich: Silicon Valley Fascism and the War on Democracy\, on
+  technofascism\, religion\, and the fight for our city.\n\nSpeakers: Gil Du
+ ran\, Cathy Carrillo\, Andrew Krinks\, Fr. Danny Bryant.\n\nPresented by Na
+ shville Community Safety Network\, The Order of Berrigan and Day\, and Nash
+ ville Peoples' Journal.
+STATUS:CONFIRMED
+TRANSP:OPAQUE
+BEGIN:VALARM
+ACTION:DISPLAY
+DESCRIPTION:Techno-Fascist Nashville starts in 1 hour
+TRIGGER:-PT1H
+END:VALARM
+END:VEVENT
+END:VCALENDAR
